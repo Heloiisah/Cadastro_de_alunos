@@ -8,7 +8,8 @@
 
     <title>Cadastro de Alunos</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -69,6 +70,19 @@
 
                 <h2>Lista de Alunos</h2>
 
+                <div id="pesquisa">
+
+                    <input
+                        type="text"
+                        id="txtPesquisar"
+                        placeholder="Pesquisar aluno pelo nome">
+
+                    <button id="btnOrdenar">
+                        Ordenar por Nome
+                    </button>
+
+                </div>
+
                 <table>
 
                     <thead>
@@ -96,6 +110,7 @@
         </main>
 
     </div>
+
     <script type="module" src="ts/script.ts"></script>
 
 </body>

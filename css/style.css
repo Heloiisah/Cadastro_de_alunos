@@ -91,6 +91,43 @@ main{
     background:var(--cor02);
 }
 
+/* PESQUISA */
+
+#pesquisa{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+#txtPesquisar{
+    flex:1;
+    padding:10px;
+    border:1px solid var(--cinza);
+    border-radius:5px;
+    outline:none;
+    font-size:16px;
+}
+
+#txtPesquisar:focus{
+    border-color:var(--cor01);
+}
+
+#btnOrdenar{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background:var(--cor01);
+    color:var(--branco);
+    cursor:pointer;
+    transition:.3s;
+}
+
+#btnOrdenar:hover{
+    background:var(--cor02);
+}
+
+/* TABELA */
+
 table{
     width:100%;
     border-collapse:collapse;
@@ -112,6 +149,12 @@ table tr:nth-child(even){
     background:#f9f9f9;
 }
 
+table tr:hover{
+    background:#eeeeee;
+}
+
+/* BOTÕES */
+
 .btnEditar,
 .btnExcluir{
     padding:6px 12px;
@@ -119,6 +162,7 @@ table tr:nth-child(even){
     border-radius:5px;
     cursor:pointer;
     color:var(--branco);
+    transition:.3s;
 }
 
 .btnEditar{
@@ -138,14 +182,53 @@ table tr:nth-child(even){
     background:#c82333;
 }
 
+/* RESPONSIVO */
+
 @media(max-width:950px){
 
     #geral{
         width:95%;
     }
 
+    #pesquisa{
+        flex-direction:column;
+    }
+
+    #btnOrdenar{
+        width:100%;
+    }
+
     table{
         font-size:14px;
+    }
+
+    table th,
+    table td{
+        padding:8px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:24px;
+    }
+
+    #botoes{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    #botoes button{
+        width:100%;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
     }
 
 }

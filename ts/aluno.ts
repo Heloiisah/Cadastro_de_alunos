@@ -1,11 +1,13 @@
-export class Aluno{
+import { IAluno } from "./IAluno.js";
 
-    id:number;
-    nome:string;
-    idade:number;
-    curso:string;
+export class Aluno implements IAluno {
 
-    constructor(id:number, nome:string, idade:number, curso:string){
+    id: number;
+    nome: string;
+    idade: number;
+    curso: string;
+
+    constructor(id: number, nome: string, idade: number, curso: string) {
 
         this.id = id;
         this.nome = nome;
@@ -14,7 +16,7 @@ export class Aluno{
 
     }
 
-    exibirDados(){
+    exibirDados() {
 
         console.log("ID: " + this.id);
         console.log("Nome: " + this.nome);
