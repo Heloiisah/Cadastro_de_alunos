@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Alunos</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="geral">
+
+        <header>
+
+            <h1>Cadastro de Alunos</h1>
+
+        </header>
+
+        <main>
+
+            <section id="formulario">
+
+                <h2>Novo Aluno</h2>
+
+                <div class="campo">
+
+                    <label for="txtId">ID</label>
+                    <input type="number" id="txtId">
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="txtNome">Nome</label>
+                    <input type="text" id="txtNome">
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="txtIdade">Idade</label>
+                    <input type="number" id="txtIdade">
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="txtCurso">Curso</label>
+                    <input type="text" id="txtCurso">
+
+                </div>
+
+                <div id="botoes">
+
+                    <button id="btnCadastrar">Cadastrar</button>
+
+                    <button id="btnLimpar">Limpar</button>
+
+                </div>
+
+            </section>
+
+            <section id="lista">
+
+                <h2>Lista de Alunos</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Curso</th>
+                            <th>Ações</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tbAlunos">
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+<script src="ts/script.ts"></script>
+
+</body>
+
+</html>
